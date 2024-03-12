@@ -1,0 +1,442 @@
+/*
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700
+
+.oswald-<uniquifier> {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #fff;
+  padding: 70px 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  min-height: 80vh;
+  background: url('') center/cover no-repeat; /* Agrega la imagen como fondo */
+  padding: 70px 0;
+  text-align: center; /* Centra el texto dentro del header */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ajusta el ancho del menú */
+  max-width: 1200px; /* Limita el ancho del menú */
+  padding: 0 20px; /* Agrega relleno a los lados del menú */
+}
+
+.logo {
+  font-size: 25px;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* Ocultar el checkbox */
+#menu {
+  display: none;
+}
+
+/* Estilizar el label para que la imagen del botón de menú sea el "checkpoint" */
+.menu label {
+  cursor: pointer;
+  display: inline-block; /* Asegura que el label tenga dimensiones para que se pueda hacer clic en él */
+}
+
+/* Estilizar la imagen del botón de menú */
+.menu label img.menu-icono {
+  width: 25px;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  font-size: 18px;
+  padding: 20px;
+  color: #111;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  backdrop-filter: blur(10px);
+  top: 100%;
+  z-index: 1;
+  background-color: #4e4e4e;
+  padding: 20px;
+  min-width: 400px;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  color: #fff;
+}
+
+.borrar {
+  background-color: #111;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.header-img img {
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+.header-txt h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #111;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
+}
+
+.header-txt p {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.btn-1,
+.btn-2 {
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  background-color: #0056b3;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  padding: 0 200px;
+}
+
+.info-txt {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+}
+
+.btn-2 {
+  display:inline-block;
+  padding: 11px 25px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.info-img {
+  flex-basis: 100%;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+}
+
+.informacion {
+  margin-top: 20px;
+  background-color: #f2e6e6;
+}
+
+
+.products {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.product {
+  width: calc(33.3% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.product-txt {
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.product-txt h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  color: #333;
+}
+
+.product-txt p {
+  margin: 10px 0;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  color: #666;
+}
+
+.precio {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #333;
+}
+
+.agregar-carrito {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.agregar-carrito:hover {
+  background-color: #4e4e4e;
+}
+
+.products {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: #f9f9f9; 
+}
+
+.footer{
+  padding: 50px;
+  background-color: #111;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a{
+  font-size: 16px;
+  color: #dcdcdc;
+  display: block;
+}
+
+.link li{
+  font-size: 16px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (max-width:991px) {
+
+  .menu{
+    padding: 20px;    
+  }
+
+  .menul label {
+    display: initial;
+  }
+  .menu .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #181818;
+    display: none;
+  }
+  .menu .navbar ul li{
+    width: 100%;
+
+  }
+
+  .menu ul li a{
+    color: #fff;
+  }
+
+  #menu:checked ~ .navbar{
+    display: initial;
+  }
+
+  .logo{ 
+    display: none;
+  }
+
+  .submenu:hover #carrito {
+    min-width: 100%;
+  }
+
+  .header-content {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .header-txt{
+    font-size: 100%;
+    text-align: center;
+  }
+  .header-txt h1 {
+    font-size: 70px;
+  }
+
+  .info {
+    padding: 30px 30px 0 30px;
+    flex-direction: column;
+  }
+  .info-txt{
+    margin-bottom: 30px;
+  }
+  .products {
+    padding: 0 30px 30px 30px;
+  }
+  .product h2{
+    margin-bottom: 30px;
+  }
+  .product-content{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #fff;
+  }
+  .footer{
+    padding: 30px;
+  }
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+}
